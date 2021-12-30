@@ -1,0 +1,109 @@
+/* RiceX-Css */
+@import url("https://cdn.jsdelivr.net/gh/Itz-fork/RiceX-Css@latest/RiceX/ricex.all.css");
+/* Custom Gist */
+@import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/848d6580/stylesheets/obsidian.css');
+
+
+/* Paragraphs */
+p.cards {
+    margin-top: 2em;
+    text-align: justify;
+}
+
+
+/* Normal Text */
+.x-text {
+    font-size: 1.1em;
+    color: #72ecc4;
+    margin-left: 0.5em;
+}
+
+.api-head {
+    text-shadow: 0 0 0.4em #E9EDF5;
+}
+
+.empty {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+code {
+    font-size: 1.2em;
+}
+
+
+/* Link */
+a {
+    color: #64bfd3;
+    text-decoration: none;
+    transition: ease-in-out 1s;
+}
+a:hover {
+    color: #6be4ff;
+}
+
+ul, li {
+    color: #E9EDF5;
+}
+
+
+/* Example Content */
+.ex-c {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.ex-content {
+    background-color: transparent;
+}
+.close {
+    color: #f5f5f5;
+    background-color: #12171f;
+    border-radius: 50%;
+    float: right;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: rgb(221, 221, 221);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Footer */
+footer {
+    margin-top: 4em;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: #121924;
+}
+
+.footer-text {
+    font-size: 1rem;
+    color: #F37F97;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    transition: ease-in-out 0.8s;
+}
+.footer-text:hover {
+    text-shadow: 0 0 0.4em #F37F97;
+}
+
+.py-icon {
+    height: 1rem;
+    width: 1rem;
+    pointer-events: none;
+}

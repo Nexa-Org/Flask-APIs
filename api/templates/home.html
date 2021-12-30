@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+    <title>Itz-fork's APIs</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <h1 align="center">
+        ✨ APIs Made by <a target="_blank" href="https://github.com/Itz-fork">Me</a>
+    </h1>
+
+    <!-- First Paragraph -->
+    <p>
+        These APIs are hosted on free servers, so Don't abuse 🪨
+    </p>
+
+    <div style="margin-top: 4em;"></div>
+
+    <!-- Translation API -->
+    <div class="x-card">
+        <!-- API Name -->
+        <h3 align="center" class="api-head">Google Translate API</h3>
+
+        <div style="margin-top: 2em;"></div>
+
+        <!-- About API -->
+        <p class="cards">
+            <span class="x-text">👀 About:</span> This API allows you to translate text with Google Translate 😁!
+        </p>
+        <!-- API Endpoint -->
+        <p class="cards">
+            <span class="x-text">⚔️ Endpoint:</span> <code>/tr</code>
+        </p>
+        <!-- API Arguments -->
+        <p class="cards">
+            <span class="x-text left">🤔 Arguments</span>:
+        <ul>
+            <li><code>text</code></li> - The text that you want to translate
+            <li><code>dest_lang</code></li> - Destination Language
+        </ul>
+        </p>
+
+        <!-- Example button -->
+        <center><button class="blue" id="openEx" onclick="openModal('exc-trans')">See Example!</button></center>
+        <!-- Example content -->
+        <div id="exc-trans" class="ex-c">
+            <div class="ex-content">
+                <span class="close" onclick="closeModal('exc-trans')">&times;</span>
+                <div class="x-card">
+                    <script src="https://gist.github.com/Itz-fork/8f7683cd58a0694aca9de701af37027d.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- Wallpapers API -->
+        <div class="x-card">
+            <!-- API Name -->
+            <h3 align="center" class="api-head">Wallpapers API</h3>
+    
+            <div style="margin-top: 2em;"></div>
+    
+            <!-- About API -->
+            <p class="cards">
+                <span class="x-text">👀 About:</span> This API allows you to search and get Wallpapers from <code>r/Wallpapers</code>😊!
+            </p>
+            <!-- API Endpoint -->
+            <p class="cards">
+                <span class="x-text">⚔️ Endpoint:</span> <code>/wallpaper</code>
+            </p>
+            <!-- API Arguments -->
+            <p class="cards">
+                <span class="x-text left">🤔 Arguments</span>:
+                <ul>
+                    <li><code>query (optional)</code></li> - The name (query) you want to search for (If not provided data will be randomized).
+                </ul>
+            </p>
+    
+            <!-- Example button -->
+            <center>
+                <button class="blue" id="openEx" onclick="openModal('exc-wall')">See Example!</button>
+            </center>
+            <!-- Example content -->
+            <div id="exc-wall" class="ex-c">
+                <div class="ex-content">
+                    <span class="close" onclick="closeModal('exc-wall')">&times;</span>
+                    <div class="x-card" id="gist-card">
+                        <script src="https://gist.github.com/Itz-fork/fd0d26eec096ce479f1b34a2cfca4f75.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Random Anime Wallpaper API -->
+    <div class="x-card">
+        <!-- API Name -->
+        <h3 align="center" class="api-head">Anime Wallpapers API</h3>
+
+        <div style="margin-top: 2em;"></div>
+
+        <!-- About API -->
+        <p class="cards">
+            <span class="x-text">👀 About:</span> This API allows you to search and get Anime Wallpapers from <code>r/AnimeWallpapers</code>😊! (Equivalent to wallpaper API but for anime wallpapers only)
+        </p>
+        <!-- API Endpoint -->
+        <p class="cards">
+            <span class="x-text">⚔️ Endpoint:</span> <code>/anime_wall</code>
+        </p>
+        <!-- API Arguments -->
+        <p class="cards">
+            <span class="x-text left">🤔 Arguments</span>:
+            <ul>
+                <li><code>query (optional)</code></li> - The name (query) you want to search for (If not provided data will be randomized).
+            </ul>
+        </p>
+
+        <!-- Example button -->
+        <center>
+            <button class="blue" id="openEx" onclick="openModal('exc-anime')">See Example!</button>
+        </center>
+        <!-- Example content -->
+        <div id="exc-anime" class="ex-c">
+            <div class="ex-content">
+                <span class="close" onclick="closeModal('exc-anime')">&times;</span>
+                <div class="x-card" id="gist-card">
+                    <script src="https://gist.github.com/Itz-fork/8fc17d02392c2b134c91bb2b87d43e8d.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Reddit search API -->
+    <div class="x-card">
+        <!-- API Name -->
+        <h3 align="center" class="api-head">Reddit Search API</h3>
+
+        <div style="margin-top: 2em;"></div>
+
+        <!-- About API -->
+        <p class="cards">
+            <span class="x-text">👀 About:</span> This API allows you to search and fetch post data from the whole reddit or specific subreddit 😊!
+        </p>
+        <!-- API Endpoint -->
+        <p class="cards">
+            <span class="x-text">⚔️ Endpoint:</span> <code>/reddit</code>
+        </p>
+        <!-- API Arguments -->
+        <p class="cards">
+            <span class="x-text left">🤔 Arguments</span>:
+            <ul>
+                <li><code>query</code></li> - The name (query) you want to search for.
+                <li><code>subreddit (optional)</code></li> - Subreddit name that you want to limit the search results (If not provided data will be fetched from the whole reddit)
+            </ul>
+        </p>
+
+        <!-- Example button -->
+        <center>
+            <button class="blue" id="openEx" onclick="openModal('exc-reddit')">See Example!</button>
+        </center>
+        <!-- Example content -->
+        <div id="exc-reddit" class="ex-c">
+            <div class="ex-content">
+                <span class="close" onclick="closeModal('exc-reddit')">&times;</span>
+                <div class="x-card" id="gist-card">
+                    <script src="https://gist.github.com/Itz-fork/31abf07fa757be58d3221a8ab826a5ed.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <span class="footer-text">Made with ❤️ & <img class="py-icon" src="{{ url_for('static',filename='img/python.svg') }}"></img> by <a href="https://t.me/NexaBotsUpdates" target="_blank">Nexa Bots</a></span>
+    </footer>
+</body>
+
+<script>
+    console.log("Join @NexaBotsUpdates!")
+    // Function to show modal
+    function openModal(modalID) {
+        let modal = document.getElementById(modalID);
+        modal.style.display = "block";
+    }
+
+    // Function to close the opened modal
+    function closeModal(modalID) {
+        let modal = document.getElementById(modalID);
+        modal.style.display = "none";
+    }
+</script>
+</html>
