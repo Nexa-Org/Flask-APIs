@@ -6,7 +6,8 @@ from .routes import (
     translator_route,
     get_anime_wallpaper_route,
     get_wallpaper,
-    search_reddit_route
+    search_reddit_route,
+    urban_dictionary_route
 )
 
 
@@ -63,6 +64,18 @@ async def reddit_search():
             return {"status": "Rip!", "data": "Not enough arguments provided 😐!"}
         reddit_search_data = await search_reddit_route(s_query, sub_redd)
         return reddit_search_data
+    except:
+        return {"status": "Rip!", "data": "Server got a trouble 😐!"}
+
+# Urban dictionary Search Route
+@nexa_apis.route("/ud")
+async def ud_search():
+    try:
+        ud_query = request.args.get("query")
+        if not ud_query:
+            return {"status": "Rip!", "data": "Not enough arguments provided 😐!"}
+        urban_dict_search_data = await urban_dictionary_route(ud_query)
+        return urban_dict_search_data
     except:
         return {"status": "Rip!", "data": "Server got a trouble 😐!"}
 
