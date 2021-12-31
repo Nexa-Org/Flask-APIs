@@ -17,8 +17,8 @@ async def urban_dictionary_route(query):
                     definition_data["author"] = definit["author"]
                     definition_data["link"] = definit["permalink"]
                     definition_data["added_on"] = definit["written_on"]
-                    definition_data["thumbs_up"] = definit["thumbs_up"]
-                    definition_data["thumbs_down"] = definit["thumbs_down"]
+                    definition_data["likes"] = definit["thumbs_up"]
+                    definition_data["dislikes"] = definit["thumbs_down"]
                     # Appending the data to the main list
                     ud_results.append(definition_data)
                 except:
