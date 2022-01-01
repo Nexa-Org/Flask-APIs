@@ -12,7 +12,7 @@ async def get_wallpaper(query):
             if query:
                 req = await red_s.get(f"https://www.reddit.com/r/{wall_sbr}/search.json?q={query}&restrict_sr=1&sr_nsfw=true")
             else:
-                req = await red_s.get("https://www.reddit.com/r/{wall_sbr}.json")
+                req = await red_s.get(f"https://www.reddit.com/r/{wall_sbr}.json")
             json_req = await req.json()
             req_data = json_req["data"]
             # Storing image urls in a list
