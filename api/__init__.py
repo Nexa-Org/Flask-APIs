@@ -51,7 +51,8 @@ async def wallpapers():
         query = request.args.get("query")
         some_wallpapers = await get_wallpaper(query)
         return some_wallpapers
-    except:
+    except Exception as e:
+        print(e)
         return {"status": "Rip!", "data": "Server got a trouble 😐!"}
 
 # Reddit Search Route
