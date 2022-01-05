@@ -7,8 +7,7 @@ from .routes import (
     get_anime_wallpaper_route,
     get_wallpaper,
     search_reddit_route,
-    urban_dictionary_route,
-    unicode_detect_route
+    urban_dictionary_route
 )
 
 
@@ -81,17 +80,6 @@ async def ud_search():
     except:
         return {"status": "Rip!", "data": "Server got a trouble 😐!"}
 
-# Unicode detector
-@nexa_apis.route("/unicode")
-async def unicode_count():
-    try:
-        uni_text = request.args.get("text")
-        if not uni_text:
-            return {"status": "Rip!", "data": "Not enough arguments provided 😐!"}
-        unicode_count = await unicode_detect_route(uni_text)
-        return unicode_count
-    except:
-        return {"status": "Rip!", "data": "Server got a trouble 😐!"}
 
 if __name__ == "__main__":
     nexa_apis.run(threaded=True, port=5000)
