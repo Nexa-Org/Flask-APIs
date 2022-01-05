@@ -218,6 +218,45 @@
     </div>
 
 
+    <!-- Unicode Detector API -->
+    <div class="x-card">
+        <!-- API Name -->
+        <h3 align="center" class="api-head">Unicode Detector API</h3>
+
+        <div style="margin-top: 2em;"></div>
+
+        <!-- About API -->
+        <p class="cards">
+            <span class="x-text">👀 About:</span> This API allows you to count the spam unicode characters of some text 😄!
+        </p>
+        <!-- API Endpoint -->
+        <p class="cards">
+            <span class="x-text">⚔️ Endpoint:</span> <code>/unicode</code>
+        </p>
+        <!-- API Arguments -->
+        <p class="cards">
+            <span class="x-text left">🤔 Arguments</span>:
+            <ul>
+                <li><code>text</code></li> - The text that you want to check.
+            </ul>
+        </p>
+
+        <!-- Example button -->
+        <center>
+            <button class="blue" id="openEx" onclick="openModal('exc-ud')">See Example!</button>
+        </center>
+        <!-- Example content -->
+        <div id="exc-ud" class="ex-c">
+            <div class="ex-content">
+                <span class="close" onclick="closeModal('exc-ud')">&times;</span>
+                <div class="x-card" id="gist-card">
+                    <script src="https://gist.github.com/Itz-fork/a9ca2bf07c3cf3d9fa6ca49b637cc686.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Footer -->
     <footer>
         <span class="footer-text">Made with ❤️ & <img class="py-icon" src="{{ url_for('static',filename='img/python.svg') }}"></img> by <a href="https://t.me/NexaBotsUpdates" target="_blank">Nexa Bots</a></span>

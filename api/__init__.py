@@ -83,7 +83,7 @@ async def ud_search():
 
 # Unicode detector
 @nexa_apis.route("/unicode")
-async def ud_search():
+async def unicode_count():
     try:
         uni_text = request.args.get("text")
         if not uni_text:

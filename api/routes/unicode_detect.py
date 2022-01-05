@@ -1,3 +1,5 @@
+# coding=utf-8
+
 async def unicode_detect_route(text):
     listed = list(text)
     uni_count = 0
