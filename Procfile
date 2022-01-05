@@ -1,1 +1,1 @@
-web: gunicorn api:nexa_apis
+web: gunicorn api:nexa_apis --limit-request-line 8094
