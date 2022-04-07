@@ -1,5 +1,6 @@
 from aiohttp import ClientSession
 
+
 async def urban_dictionary_route(query):
     api_url = f"https://api.urbandictionary.com/v0/define?term={query}"
     ud_results = []
@@ -23,7 +24,7 @@ async def urban_dictionary_route(query):
                     ud_results.append(definition_data)
                 except:
                     pass
-        # Parsing 
+        # Parsing
     main_ud_data = {}
     main_ud_data["status"] = "Ok"
     main_ud_data["data"] = ud_results

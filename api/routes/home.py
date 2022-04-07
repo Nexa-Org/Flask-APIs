@@ -2,5 +2,6 @@
 
 from flask import render_template
 
+
 async def home_route():
     return render_template("home.html")
