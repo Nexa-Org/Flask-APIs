@@ -1,8 +1,7 @@
-# Copyright (c) 2021 Itz-fork
+# Copyright (c) 2022 Itz-fork
 
-from flask import Flask, request
+from flask import Flask, request, render_template
 from .routes import (
-    home_route,
     translator_route,
     get_anime_wallpaper_route,
     get_wallpaper,
@@ -19,7 +18,7 @@ nexa_apis.config["DEBUG"] = False
 # Home route
 @nexa_apis.route("/")
 async def home():
-    return await home_route()
+    return render_template("home.html")
 
 # Translator Route
 @nexa_apis.route("/tr")

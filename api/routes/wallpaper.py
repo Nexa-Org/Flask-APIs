@@ -1,13 +1,21 @@
-from functions.reddit import reddit
+# Copyright (c) 2021 Itz-fork
+
+from functions.reddit import request
 
 
-WALLPAPER_SUBREDDITS = ["wallpapers", "iWallpaper"]
+subs = [
+    "Animewallpaper",
+    "wallpaper",
+    "wallpapers",
+    "wallpaperdump",
+    "iWallpaper"
+]
 
 
 async def get_wallpaper(q):
     imgs = []
-    for s in WALLPAPER_SUBREDDITS:
-        ft = await reddit(s, q)
+    for s in subs:
+        ft = await request(s, q)
         for i in ft:
             imgs.append(i["image"])
     return {"status": "Ok", "data": imgs}
